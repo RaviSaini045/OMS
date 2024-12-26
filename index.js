@@ -2,7 +2,7 @@ import OrderDetail from "./OrderDetails.js";
 import express from "express";
 
 const app = express();
-
+app.use(express.json());
 const PORT = 3000;
 
 const router = express.Router();
@@ -57,12 +57,12 @@ const calculateRevenue = async (req, res) => {
 const calculateDiscount = (order) => {
     const { quantity, pricePerUnit } = order;
     const totalPrice = quantity * pricePerUnit;
-    let discountReceived;
+    let discountReceived = 0;
     if(totalPrice > 10000)
         discountReceived = 0.1 * totalPrice;
     if(quantity > 5)
         discountReceived += 500;
-    return { discountReceived };
+    return  discountReceived ;
 };
 
 router.route("/store-order").post(storeOrderDetails);

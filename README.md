@@ -24,3 +24,12 @@ The **Order Management System** is a backend application designed to manage orde
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/order-management-system.git](https://github.com/RaviSaini045/OMS.git
+2. Install dependencies:
+   ```bash
+   npm install
+3. Start the server:
+   ```bash
+   node index.js
+4. POSTMAN Workspace:
+   ```bash
+   https://lunar-station-382217.postman.co/workspace/OMStesting~ab416da6-f7d8-4da6-8829-bafc35f16bc3/collection/24615237-bb26fcae-39ac-44aa-8024-e53f14e94540?action=share&creator=24615237
